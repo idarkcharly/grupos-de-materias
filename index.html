@@ -8,12 +8,22 @@
   </head>
   <body>
     <header>
-      <h1>Grupos de Materias</h1>
-      <p>Lista de profesores y enlaces a grupos de WhatsApp</p>
+      <h1>Grupos de Materias por Carrera</h1>
+      <p>
+        Selecciona una carrera para ver las materias, profesores y grupos de
+        WhatsApp
+      </p>
+      <select id="careerSelect">
+        <option value="">-- Selecciona una carrera --</option>
+        <option value="sistemas.json">Sistemas</option>
+        <option value="gestion.json">Gestión Empresarial</option>
+        <option value="administracion.json">Administración</option>
+      </select>
       <input
         type="text"
         id="searchBar"
         placeholder="Buscar materia o profesor..."
+        style="display: none"
       />
     </header>
 
@@ -39,22 +49,57 @@
     </footer>
 
     <script>
-      fetch("data.json?v=" + Date.now())
-        .then((res) => res.json())
-        .then((data) => renderData(data));
+      const select = document.getElementById("careerSelect");
+      const content = document.getElementById("content");
+      const searchBar = document.getElementById("searchBar");
 
-      function renderData(data) {
-        const content = document.getElementById("content");
+      let currentData = {};
+
+      select.addEventListener("change", () => {
+        const file = select.value;
+
+        if (!file) {
+          content.innerHTML = "";
+          searchBar.style.display = "none";
+          currentData = {};
+          return;
+        }
+
+        searchBar.style.display = "block";
+        searchBar.value = "";
+
+        fetch(file + "?v=" + Date.now())
+          .then((res) => res.json())
+          .then((data) => {
+            currentData = data;
+            renderCareer(data);
+          });
+      });
+
+      searchBar.addEventListener("keyup", () => {
+        const query = searchBar.value.toLowerCase();
+        renderCareer(currentData, query);
+      });
+
+      function renderCareer(data, filter = "") {
         content.innerHTML = "";
 
-        Object.keys(data).forEach((categoria) => {
-          const section = document.createElement("section");
-          const title = document.createElement("h2");
-          title.textContent = categoria;
-          section.appendChild(title);
+        Object.keys(data).forEach((materia) => {
+          const filteredProfs = data[materia].filter(
+            (prof) =>
+              prof.name.toLowerCase().includes(filter) ||
+              materia.toLowerCase().includes(filter)
+          );
+
+          if (filteredProfs.length === 0) return;
+
+          const details = document.createElement("details");
+          const summary = document.createElement("summary");
+          summary.textContent = materia;
+          details.appendChild(summary);
 
           const ul = document.createElement("ul");
-          data[categoria].forEach((prof) => {
+          filteredProfs.forEach((prof) => {
             const li = document.createElement("li");
             const span = document.createElement("span");
             span.textContent = prof.name;
@@ -72,25 +117,15 @@
               btn.className = "btn disabled";
               btn.textContent = "No disponible";
             }
-            li.appendChild(btn);
 
+            li.appendChild(btn);
             ul.appendChild(li);
           });
 
-          section.appendChild(ul);
-          content.appendChild(section);
+          details.appendChild(ul);
+          content.appendChild(details);
         });
       }
-
-      document
-        .getElementById("searchBar")
-        .addEventListener("keyup", function () {
-          const query = this.value.toLowerCase();
-          document.querySelectorAll("section").forEach((section) => {
-            const text = section.innerText.toLowerCase();
-            section.style.display = text.includes(query) ? "block" : "none";
-          });
-        });
     </script>
   </body>
 </html>

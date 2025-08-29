@@ -1,0 +1,80 @@
+{
+  "Grupos Generales por carrera": [
+    {
+      "name": "Sistemas",
+      "url": "https://chat.whatsapp.com/F0Zb3vBqZLtJ6tEddFG1Gj?mode=ems_copy_t"
+    },
+    {
+      "name": "Gestión Empresarial",
+      "url": "https://chat.whatsapp.com/FENdZWAIx1v5OVPZVtIFYa?mode=ems_copy_t"
+    },
+    { "name": "Administración", "url": "" }
+  ],
+  "Cálculo Diferencial": [
+    { "name": "Wenseslao Mendoza Antun", "url": "" },
+    {
+      "name": "Alberto Mendes Roman",
+      "url": "https://chat.whatsapp.com/DAkmAR6KlSdCTGfyRKVDOv"
+    },
+    { "name": "Jose Alberto Villalobos Serrano", "url": "" },
+    { "name": "Federico Armando Arias Zambrano", "url": "" },
+    { "name": "Vanesa Del Carmen Cotlame Salinas", "url": "" }
+  ],
+  "Fundamentos de Investigación": [
+    { "name": "Doralina Hernandez Lechuga", "url": "" },
+    {
+      "name": "Samuel Lara Escamilla",
+      "url": "https://chat.whatsapp.com/KyiBWDgo1vk5sU4hZXd5oM?mode=ems_copy_c"
+    },
+    { "name": "Marisela Ivette Caldera Franco", "url": "" },
+    { "name": "León Miguel Ramos Corchado", "url": "" },
+    { "name": "Francisco Javier Mejía Ochoa", "url": "" }
+  ],
+  "Fundamentos de Programación": [
+    { "name": "Guillermo Garcia Garcia", "url": "" },
+    {
+      "name": "Laura Alejandra Rosario López",
+      "url": "https://chat.whatsapp.com/KdSLbMyoqYpHzjfroNJwf8?mode=ems_copy_c"
+    },
+    {
+      "name": "Audel Rolando Pérez García",
+      "url": "https://chat.whatsapp.com/IRBccCsu6Et39NfuuYtzvF?mode=ems_wa_t"
+    },
+    {
+      "name": "Erika Concepción Calderon García",
+      "url": "https://chat.whatsapp.com/CRggLLPuSjMKwEHec1Ib8c"
+    },
+    { "name": "Nancy Ruiz Monroy", "url": "" },
+    { "name": "Ricardo García Castro", "url": "" }
+  ],
+  "Matemáticas Discretas": [
+    { "name": "María Isabel Hernandez Cortés", "url": "" },
+    {
+      "name": "Antonio Priego Clemente",
+      "url": "https://chat.whatsapp.com/CLYet3YKL8I6qYCQcsRC3z"
+    },
+    { "name": "Ernestina Anguiano Bello", "url": "" },
+    { "name": "Miriam Díaz Rodriguez", "url": "" }
+  ],
+  "Taller de Administración": [
+    { "name": "Zoila Eudelia Gomez", "url": "" },
+    { "name": "Edgar Omar Gutiérrez Villegas", "url": "" },
+    { "name": "Irela Chávez Arvizu", "url": "" },
+    {
+      "name": "Alma Elizabeth Miranda Quiñonez",
+      "url": "https://chat.whatsapp.com/Ha2mFHOmYhx5AEvnKsb1hS"
+    },
+    { "name": "Armando Rodríguez Montes", "url": "" },
+    { "name": "Adela Morales Vasquez", "url": "" }
+  ],
+  "Taller de Ética": [
+    { "name": "Ezequiel Castillo Vargas", "url": "" },
+    { "name": "Rosa Alor Francisco", "url": "" },
+    { "name": "Lucia Xiomara Silva Maynez", "url": "" },
+    {
+      "name": "Arcely Aquino Ruiz",
+      "url": "https://chat.whatsapp.com/DyZn1pRtUaoIHKGzbRJkff"
+    },
+    { "name": "Quinatzin Reyes Gomez", "url": "" }
+  ]
+}
