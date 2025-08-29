@@ -27,7 +27,12 @@
       />
     </header>
 
-    <main id="content"></main>
+    <section id="gruposGenerales" class="grupos-section">
+      <h2>Grupos Generales por Carrera</h2>
+      <ul id="listaGenerales"></ul>
+    </section>
+
+    <main id="content" style="display: none"></main>
 
     <section id="contribuir">
       <h2>Cómo contribuir</h2>
@@ -68,19 +73,66 @@
       const select = document.getElementById("careerSelect");
       const content = document.getElementById("content");
       const searchBar = document.getElementById("searchBar");
+      const gruposGeneralesSection = document.getElementById("gruposGenerales");
+      const listaGenerales = document.getElementById("listaGenerales");
+
+      const generalGroups = [
+        {
+          name: "Sistemas",
+          url: "https://chat.whatsapp.com/F0Zb3vBqZLtJ6tEddFG1Gj",
+        },
+        {
+          name: "Gestión Empresarial",
+          url: "https://chat.whatsapp.com/FENdZWAIx1v5OVPZVtIFYa",
+        },
+        {
+          name: "Administración",
+          url: "",
+        },
+      ];
 
       let currentData = {};
+
+      function renderGenerales() {
+        listaGenerales.innerHTML = "";
+        generalGroups.forEach((g) => {
+          const li = document.createElement("li");
+          const span = document.createElement("span");
+          span.textContent = g.name;
+          li.appendChild(span);
+
+          let btn;
+          if (g.url) {
+            btn = document.createElement("a");
+            btn.href = g.url;
+            btn.target = "_blank";
+            btn.className = "btn";
+            btn.textContent = "WhatsApp";
+          } else {
+            btn = document.createElement("span");
+            btn.className = "btn disabled";
+            btn.textContent = "No disponible";
+          }
+
+          li.appendChild(btn);
+          listaGenerales.appendChild(li);
+        });
+      }
+      renderGenerales();
 
       select.addEventListener("change", () => {
         const file = select.value;
 
         if (!file) {
-          content.innerHTML = "";
+          content.style.display = "none";
+          gruposGeneralesSection.style.display = "block";
           searchBar.style.display = "none";
           currentData = {};
           return;
         }
 
+        gruposGeneralesSection.style.display = "none";
+        content.style.display = "block";
         searchBar.style.display = "block";
         searchBar.value = "";
 
@@ -88,7 +140,7 @@
           .then((res) => res.json())
           .then((data) => {
             currentData = data;
-            renderCareer(data);
+            renderCareer(currentData);
           });
       });
 
