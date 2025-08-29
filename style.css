@@ -70,27 +70,6 @@ li span {
   font-size: 1rem;
 }
 
-footer {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #ecf0f1;
-  border-top: 1px solid #ccc;
-  border-radius: 10px;
-  font-size: 0.9rem;
-  color: #555;
-  line-height: 1.5;
-}
-
-footer p {
-  margin-bottom: 8px;
-}
-
-footer strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #2c3e50;
-}
-
 .btn,
 .btn.disabled {
   display: inline-flex;
@@ -136,14 +115,24 @@ footer strong {
     margin-left: 0;
     margin-top: 6px;
   }
-  footer {
-    padding: 16px;
-    font-size: 0.85rem;
-    line-height: 1.6;
-    text-align: left;
-  }
+}
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-top: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
 
-  footer p {
-    margin-bottom: 10px;
-  }
+footer p {
+  margin-bottom: 8px;
+}
+
+footer strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #2c3e50;
 }
