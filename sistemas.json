@@ -51,10 +51,10 @@
     { "name": "María Isabel Hernandez Cortés", "url": "" },
     {
       "name": "Antonio Priego Clemente",
-      "url": "https://chat.whatsapp.com/CLYet3YKL8I6qYCQcsRC3z"
-    },
+      "url": "https://chat.whatsapp.com/CLYet3YKL8I6qYCQcsRC3z"},
     { "name": "Ernestina Anguiano Bello", "url": "" },
-    { "name": "Miriam Díaz Rodriguez", "url": "" }
+    { "name": "Miriam Díaz Rodriguez", "url": "" },
+    { "name": "Brenda Gabriela Pérez Mauricio", "url": "" }
   ],
   "Taller de Administración": [
     { "name": "Zoila Eudelia Gomez", "url": "" },
@@ -78,3 +78,4 @@
     { "name": "Quinatzin Reyes Gomez", "url": "" }
   ]
 }
+
