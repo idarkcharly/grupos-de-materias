@@ -1,0 +1,41 @@
+{
+  "Cálculo Diferencial": [
+    { "name": "Wenseslao Mendoza Antun", "url": "" },
+    { "name": "Alberto Mendes Roman", "url": "https://chat.whatsapp.com/DAkmAR6KlSdCTGfyRKVDOv" },
+    { "name": "Jose Alberto Villalobos Serrano", "url": "" },
+    { "name": "Federico Armando Arias Zambrano", "url": "" }
+  ],
+  "Fundamentos de Investigación": [
+    { "name": "Doralina Hernandez Lechuga", "url": "" },
+    { "name": "Samuel Lara Escamilla", "url": "" },
+    { "name": "Marisela Ivette Caldera Franco", "url": "" },
+    { "name": "León Miguel Ramos Corchado", "url": "" }
+  ],
+  "Fundamentos de Programación": [
+    { "name": "Guillermo Garcia Garcia", "url": "" },
+    { "name": "Laura Alejandra Rosario López", "url": "" },
+    { "name": "Audel Rolando Pérez García", "url": "https://chat.whatsapp.com/IRBccCsu6Et39NfuuYtzvF?mode=ems_wa_t" },
+    { "name": "Erika Concepción Calderon García", "url": "" },
+    { "name": "Nancy Ruiz Monroy", "url": "" }
+  ],
+  "Matemáticas Discretas": [
+    { "name": "María Isabel Hernandez Cortés", "url": "" },
+    { "name": "Antonio Priego Clemente", "url": "" },
+    { "name": "Ernestina Anguiano Bello", "url": "" },
+    { "name": "Miriam Díaz Rodriguez", "url": "" }
+  ],
+  "Taller de Administración": [
+    { "name": "Zoila Eudelia Gomez", "url": "" },
+    { "name": "Edgar Omar Gutiérrez Villegas", "url": "" },
+    { "name": "Irela Chávez Arvizu", "url": "" },
+    { "name": "Alma Elizabeth Miranda Quiñonez", "url": "" },
+    { "name": "Armando Rodríguez Montes", "url": "" }
+  ],
+  "Taller de Ética": [
+    { "name": "Ezequiel Castillo Vargas", "url": "" },
+    { "name": "Rosa Alor Francisco", "url": "" },
+    { "name": "Lucia Xiomara Silva Maynez", "url": "" },
+    { "name": "Arcely Aquino Ruiz", "url": "" },
+    { "name": "Quinatzin Reyes Gomez", "url": "" }
+  ]
+}
