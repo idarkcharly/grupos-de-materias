@@ -19,13 +19,23 @@
 
     <main id="content"></main>
 
-<footer>
-  <p><strong>Proyecto estudiantil sin afiliación oficial.</strong></p>
-  <p>Este sitio web no pertenece ni está respaldado por el Tecnológico Nacional de México (TecNM) ni por ninguna de sus instituciones. No representa oficialmente a profesores, grupos o programas académicos.</p>
-  <p>La información publicada es con fines de apoyo entre estudiantes y puede no estar actualizada o ser precisa. El uso de este sitio es bajo tu propio riesgo.</p>
-  <p>Los enlaces a grupos de WhatsApp son proporcionados por la comunidad estudiantil y no son administrados por este sitio. Úsalos bajo tu propio criterio.</p>
-</footer>
-
+    <footer>
+      <p><strong>Proyecto estudiantil sin afiliación oficial.</strong></p>
+      <p>
+        Este sitio web no pertenece ni está respaldado por el Tecnológico
+        Nacional de México (TecNM) ni por ninguna de sus instituciones. No
+        representa oficialmente a profesores, grupos o programas académicos.
+      </p>
+      <p>
+        La información publicada es con fines de apoyo entre estudiantes y puede
+        no estar actualizada o ser precisa. El uso de este sitio es bajo tu
+        propio riesgo.
+      </p>
+      <p>
+        Los enlaces a grupos de WhatsApp son proporcionados por la comunidad
+        estudiantil y no son administrados por este sitio. Úsalos bajo tu propio
+        criterio.
+      </p>
     </footer>
 
     <script>
@@ -37,14 +47,14 @@
         const content = document.getElementById("content");
         content.innerHTML = "";
 
-        Object.keys(data).forEach((materia) => {
+        Object.keys(data).forEach((categoria) => {
           const section = document.createElement("section");
           const title = document.createElement("h2");
-          title.textContent = materia;
+          title.textContent = categoria;
           section.appendChild(title);
 
           const ul = document.createElement("ul");
-          data[materia].forEach((prof) => {
+          data[categoria].forEach((prof) => {
             const li = document.createElement("li");
             const span = document.createElement("span");
             span.textContent = prof.name;
@@ -71,6 +81,7 @@
           content.appendChild(section);
         });
       }
+
       document
         .getElementById("searchBar")
         .addEventListener("keyup", function () {
