@@ -7,6 +7,7 @@
     },
     { "name": "Jose Alberto Villalobos Serrano", "url": "" },
     { "name": "Federico Armando Arias Zambrano", "url": "" },
+    { "name": "Fernando Ramos Garcia", "url": "" },
     { "name": "Vanesa Del Carmen Cotlame Salinas", "url": "" }
   ],
   "Fundamentos de Investigación": [
@@ -17,7 +18,8 @@
     },
     { "name": "Marisela Ivette Caldera Franco", "url": "" },
     { "name": "León Miguel Ramos Corchado", "url": "" },
-    { "name": "Francisco Javier Mejía Ochoa", "url": "" }
+    { "name": "Francisco Javier Mejía Ochoa", "url": "" },
+    { "name": "Josefina del Carmen Fernández Alanis", "url": "" }
   ],
   "Fundamentos de Programación": [
     { "name": "Guillermo Garcia Garcia", "url": "" },
@@ -34,13 +36,15 @@
       "url": "https://chat.whatsapp.com/CRggLLPuSjMKwEHec1Ib8c"
     },
     { "name": "Nancy Ruiz Monroy", "url": "" },
-    { "name": "Ricardo García Castro", "url": "" }
+    { "name": "Ricardo García Castro", "url": "" },
+    { "name": "Jacobo Antonio Cruz", "url": "" }
   ],
   "Matemáticas Discretas": [
     { "name": "María Isabel Hernandez Cortés", "url": "" },
     {
       "name": "Antonio Priego Clemente",
-      "url": "https://chat.whatsapp.com/CLYet3YKL8I6qYCQcsRC3z"},
+      "url": "https://chat.whatsapp.com/CLYet3YKL8I6qYCQcsRC3z"
+    },
     { "name": "Ernestina Anguiano Bello", "url": "" },
     { "name": "Miriam Díaz Rodriguez", "url": "" },
     { "name": "Brenda Gabriela Pérez Mauricio", "url": "" }
@@ -54,7 +58,8 @@
       "url": "https://chat.whatsapp.com/Ha2mFHOmYhx5AEvnKsb1hS"
     },
     { "name": "Armando Rodríguez Montes", "url": "" },
-    { "name": "Adela Morales Vasquez", "url": "" }
+    { "name": "Adela Morales Vasquez", "url": "" },
+    { "name": "Jesús Rafael García Serna", "url": "" }
   ],
   "Taller de Ética": [
     { "name": "Ezequiel Castillo Vargas", "url": "" },
@@ -64,7 +69,7 @@
       "name": "Arcely Aquino Ruiz",
       "url": "https://chat.whatsapp.com/DyZn1pRtUaoIHKGzbRJkff"
     },
-    { "name": "Quinatzin Reyes Gomez", "url": "" }
+    { "name": "Quinatzin Reyes Gomez", "url": "" },
+    { "name": "Laura Patricia Guevara Rangel", "url": "" }
   ]
 }
-
